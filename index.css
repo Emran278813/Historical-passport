@@ -1,0 +1,457 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Georgia,sans-serif;
+}
+
+body{
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+
+/* Navbar design */
+.navbar{
+    background:#111111;
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+    height:90px;
+    justify-content:space-between;
+    align-content: center;
+    border-radius: 0 0 10% 10%;
+}
+.navbar-logo{
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    background:hsl(0, 100%, 50%);
+    border-radius:20px;
+    padding: 10px;
+    border:none;
+    font-style:italic;
+    margin:-17px;
+}
+.navbar-items{
+    float:right;
+    font-size: 20px;
+}
+.navbar-item{
+    display:inline-block;
+    padding: 20px;
+}
+.navbar-item a{
+    text-decoration: none;
+    color:white;
+}
+.special{
+    position:relative;
+}
+.navbar-badge{
+    background-color:red;
+    padding:10px;
+    border-radius:30px;
+    position:absolute;
+    top:-18px;
+    right:-22px;
+    text-align:center;
+}
+
+/* Web-heading start here  */
+.web-heading{
+    background-image: url('images/downtown.jpg');
+    /* background-repeat:no-repeat; */
+    background-position:center;
+    background-size:cover;
+    background-color:#f4f4f4;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    height: 300px;
+    margin: 20px;
+}
+
+.heading{
+    font-size:50px;
+    padding:20px;
+    font-style:italic;
+}
+.description{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.button-design{
+    font-size:40px;
+    padding:100px;
+}
+.start-button{
+    background-color:green;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: none;
+    font-size: 20px;
+    border:none;
+}
+
+/*Introduction part*/
+.main-descriptions{
+   padding:100px;
+   text-align:center;
+   color:#007b5e;
+   margin:1px;
+}
+
+.description-heading{
+    font-size:50px;
+    font-style:inherit;
+}
+
+/* Intro-picture-design */
+
+.intro-pictures-design {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+    border-radius: 15px;
+}
+
+.intro-pictures-design img {
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border:none;
+}
+
+.intro-pictures-design img:hover{
+    transform: scale(1.10);
+}
+/* Description picture */
+
+
+.description-details{
+    font-size:20px;
+    color:black;
+    padding:30px;
+}
+/* Horizontal line */
+hr{
+    width:100%;
+    height:1px;
+    margin:50px 0;
+}
+/* Header of How it works */
+.how-header{
+    text-align:center;
+    background-color: #007b5e;
+    border-radius: 15px;
+    box-shadow: 20px 10px 15px (0,0,0,0.3);
+    width: auto;
+}
+
+.how-header h1{
+    margin: 30px;
+    text-transform: capitalize;
+    color:red;
+    font-weight: bold;
+    font-size:50px;
+    color:white;
+    padding:10px;
+    font-style: initial;
+}
+/* Making How is it work */
+.destination-section{
+    display:flex;
+    text-align:center;
+    justify-content: space-around;
+    border-radius: 15px;;
+}
+
+.destination-design{
+    background-color:white;
+    width:350px;
+    margin:45px;
+    border-radius:10px;
+    justify-content: center;
+    align-items: center;
+    padding:50px 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+.destination-design h2{
+    font-size:30px;
+}
+.destination-design p{
+    font-size:25px;
+    font-style: italic;
+}
+.destination-images{
+    width:auto;
+    height:300px;
+    object-fit: cover;
+    border-radius:15px;
+    box-shadow: 4px 5px 10px rgba(0,0,0,0.1);
+    animation: float 4s ease-in-out infinite;
+}
+/* Images design animation */
+@keyframes float{
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0px);}
+}
+
+@keyframes floatIn{
+    0%{opacity: 0; transform: translateY(0px);}
+    100%{opacity: 1; transform: translateY(10px);}
+}
+.procedure-steps{
+    background-color: #f4f4f4;
+    width: 200px;
+    height:200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin:30px;
+}
+
+.feature{
+    background-color: white;
+    width: 100%;
+    max-width:350px;
+    height:auto;
+    padding:30px 10px;
+    margin:50px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    text-align:center;
+
+}
+
+.features{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* Location design start here */
+.location-header{
+    font-size:50px;
+    padding:10px;
+    text-align: center;
+    background-color: #007b5e;
+    color:white;
+    text-transform:uppercase;
+    border-radius: 15px;
+    box-shadow: 8px 10px 14px rgba(0,0,0,0.1);
+}
+
+.all-locations{
+    /* background-color:grey; */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+    padding:30px
+}
+.locations a{
+    text-decoration: none;
+    color:black;
+}
+.locations a:hover{
+    color:#ff0000;
+    cursor: pointer;
+}
+.locations{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    width:380px;
+    height:450px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid gold;
+    justify-content: center;
+    padding:40px;
+    flex-wrap: wrap;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.locations:hover{
+    transform: scale(1.02);
+}
+
+.locations img{
+    width:70%;
+    height:192px;
+    object-fit: cover;
+    border-radius:8px;
+    padding:15px;
+}
+
+
+.locations p{
+    padding:5px;
+}
+.locations h3{
+    padding:5px;
+}
+
+h3:hover{
+    color:red;
+    cursor: pointer;
+}
+
+
+/* Bottom -description starts here  */
+.bottom-description{
+    padding: 30px;
+}
+.b-design{
+    text-align:center;
+    padding: 20px;
+    margin: 10px;
+}
+.b-design h2{
+    font-size: 50px;
+    color:#007b5e;
+    padding: 20px;
+}
+.b-design p{
+    font-size:20px;
+}
+
+/* bottom description details */
+.track-heading{
+    padding: 10px;
+    font-size: 50px;
+}
+.track-details{
+    font-size: 20px;
+}
+.track-progress{
+    background-color: #f9f5ef;
+    text-align:center;
+    padding:20px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 5px 6px 9px rgba(0.1,0,0.1,0.1);
+}
+
+.passport-grid{
+    background-color: #fff;
+    width: 850px;
+    height: 160px;
+    margin: 50px auto;
+    display:flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 30px; 
+    border: 3px dotted #aaa ;
+    border-radius: 40px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.stamp-slot{
+    font-size: 60px;
+    border: 2px dotted #ff0000;
+    border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+.stamp-slot:hover {
+    cursor:pointer;
+    color:aqua;
+    transform: scale(1.10);
+}
+
+
+.stamp-slot.completed {
+    border: 3px dotted #ccc;
+    border-radius: 40px;
+    background: #fef1e6;
+    border-color: #d59f6e;
+    box-shadow: 0 12px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.stamp-slot.completed:hover {
+    color:#d59f6e;
+    transform: scale(1.10);
+}
+/* Footer design start here */
+.footer-design{
+    background-color:#007b5e;
+    padding:10px;
+    color:white;
+    text-align:center;
+}
+
+.footer-rights{
+    font-size:20px;
+    padding:10px;
+}
+li{
+    display: inline-block;
+    padding: 20px;
+}
+
+/* ✅ Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 32px; /* ✅ Smaller heading on mobile */
+    }
+
+    .description {
+        font-size: 18px; /* ✅ Resize paragraph */
+    }
+
+    .button-design {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .main-descriptions {
+        padding: 20px;
+    }
+
+    .navbar {
+        /* ✅ Stack navbar items on mobile */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .features,
+    .locations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature,
+    .location {
+        margin: 20px 10px;
+    }
+
+    .b-design h2 {
+        font-size: 36px;
+    }
+
+    .b-design p {
+        font-size: 18px;
+    }
+}

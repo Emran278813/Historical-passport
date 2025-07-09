@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="style.css">
+    <link rel ="stylesheet" href="index.css">
     <title>Youngstown Passport Adventure</title>
 </head>
 <body>
@@ -11,6 +11,7 @@
      <nav class = "navbar">
             <div class="navbar-logo">Explore Y-Town</div>
             <div class ="navbar-items">
+                <div class="navbar-item Home">Home</div>
                 <div class="navbar-item">
                     <label>Language</label>
                     <select>
@@ -19,6 +20,9 @@
                         <option value="fr">Français</option>
                         <option value="de">Deutsch</option>
                     </select>
+                </div>
+                <div class="navbar-item Contact">
+                    <a href ="historical_contact.html">Contact info</a>
                 </div>
                 <div class="navbar-item about">About</div>
                 <div class="navbar-item special"> Special Event <span class="navbar-badge">New!</span></div>
@@ -40,93 +44,151 @@
 
     <!-- Main section -->
     <main>
-        <!-- Introduction section -->
+<!-- Introduction section -->
         <section>
             <div class="main-descriptions">
                 <h2 class="description-heading">About the Passport Program</h2>
                 <p class="description-details">A free, family-friendly digital scavenger hunt designed
                 to bring Downtown Youngstown to life. Visit local attractions,
                 complete fun challenges, and collect virtual stamps!</p>
-                <img src ='family.png' alt="Family-logo" class="family-logo-y">
-                <img src='Scavenger.jpg' alt="Scavenger-hunt" class="family-logo-y">
-                <img src='stamp.png' alt="Stamp" class="family-logo-y">
             </div>
-            <hr>
         </section>
-
-        <!-- working-section -->
-
-        <section>
-            <div>
-             <h3 class="procedure-heading"></h3>
-             <div class="features">
-                <div class="feature">
-                 <h3>1. Choose a Destination</h3>
-                 <p>Pick a local spot to visit.</p>
-                </div>
-
-                <div class="feature">
-                 <h3>2. Complete Tasks</h3>
-                 <p>Fun games,photos & trivia await!.</p>
-                </div>
-
-                <div class="feature">
-                 <h3>3. Earn Rewards</h3>
-                 <p>Collect badges and unlock surprises.</p>
-                </div>
-             </div>
+        <!-- Intro-picture -->
+        <section class="intro-pictures">
+            <div class="intro-pictures-design">
+                <img src ='images/family.png' alt="Family-logo" class="family-logo-y">
+                <img src='images/Scavenger.jpg' alt="Scavenger-hunt">
+                <img src='images/stamp.png' alt="Stamp">
             </div>
         </section>
         <hr>
+        <div class="how-header"><h1>HOW IT WORKS</h1></div>
+<!-- How it works -->
+        <section class="destination-section">
+           <!-- Step one -->
+           <div class="destination-design">
+              <img class="destination-images" src="images/destination.png" alt="Places">
+              <h2>1.Choose a Destination</h2>
+               <p>Pick a local spot to visit.</p>
+           </div>
+           <!-- step two -->
+           <div class="destination-design">
+              <img class="destination-images" src="images/task.png" alt="Places">
+              <h2>2.Complete Tasks</h2>
+              <p>Fun games,photos & trivia await!.</p>
+           </div>
+           <!-- step three -->
+           <div class="destination-design">
+               <img class="destination-images" src="images/rewards.png" alt="Places">
+               <h2>3.Earn Rewards</h2>
+               <p>Collect badges and unlock surprises.</p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+<!-- Features location -->
+    <h2 class="location-header">Affiliated Organizations</h2>
+    <section class="all-locations">
+        <!-- Butler -->
+        <div class =locations>
+            <img src="images/butler.jpg" alt="Butler Art Museum">
+            <h3><a href="https://butlerart.com/">🎨The Butler Institute of American Art.</a>
+            </h3>
+            <p>Explore American art collections</p>
+        </div>
 
-        <!-- Features location -->
+        <!-- Mineral -->
+         <div class =locations>
+            <img src="images/Mineral.jpg" alt="Mineral Museum">
+            <h3><a href="https://exploremahoning.com/visits/the-clarence-r-smith-mineral-museum/">
+            🪨Clarence R. Smith Mineral Museum.</a></h3>
+            <p>Explore stunning mineral and rock specimens from around the world.</p>
+        </div>
+        <!-- Arms Museum -->
+         <div class =locations>
+            <img src="images/arms.jpg" alt="Arms Museum">
+            <h3><a href ="https://mahoninghistory.org/arms-family-museum/exhibits/">
+            🏛️Mahoning Valley Historical Society, Arms Family Museum.</a></h3>
+            <p>Step back in time with historic exhibits inside a beautifully preserved mansion.</p>
+        </div>
         
-        <section class="locations-margin">
-            <div>
-             <h2 class="locations-heading">Featured Locations</h2>
-             <div class ="locations">
-               <div class ="location">
-                  <h3>🎨The Butler Institute of American Art.</h3>
-                  <p>Explore American art collections</p>
-               </div>
+        <!-- Tyler Messeum -->
+         <div class =locations>
+            <img src="images/tyler.jpg" alt="Tyler Mesuem">
+            <h3><a href="https://mahoninghistory.org/tyler-history-center/">
+            📚Mahoning Valley Historical Society, Tyler History Center.</a></h3>
+            <p>Uncover Youngstown’s rich history through interactive exhibits and archives.</p>
+        </div>
+        
+        <!-- McDonough Museum -->
+         <div class =locations>
+            <img src="images/mcDonough.jpg" alt="McDonough Museum">
+            <h3><a href="https://academics.ysu.edu/mcdonough-museum-of-art">
+            🖼️McDonough Museum of Art.</a></h3>
+            <p>Experience contemporary art exhibits by regional, national, and student artists.</p>
+        </div>
 
-               <div class ="location">
-                  <h3>🏛️Clarence R. Smith Mineral Museum at YSU.</h3>
-                  <p>Explore American art collections</p>
-               </div>
+        <!-- Melnick Mesuem -->
+         <div class =locations>
+            <img src="images/melnick.jpeg" alt="Melnick Meseum">
+            <h3><a href="https://maag.ysu.edu/melnickhome">🧬Melnick Medical Museum.</a></h3>
+            <p>Explore the history of medicine with fascinating artifacts and exhibits.</p>
+        </div>
 
-               <div class="location">
-                <h3>🏞️ Wean Park</h3>
-                <p>Relax and explore the outdoors.</p>
-               </div>
+        <!-- OHWOW -->
+         <div class =locations>
+            <img src="images/ohwow.avif" alt="OH WOW!">
+            <h3><a href="https://ohwowkids.org/">
+            🔬 OH WOW! The Roger & Gloria Jones Children’s Center for Science & Technology.</a></h3>
+            <p>Engage kids in hands-on science, tech, and fun-filled learning experiences.</p>
+        </div>
 
-               <div class="location">
-                <h3>🧪 OH WOW! Center</h3>
-                <p>Hands-on STEM fun for kids!</p>
-              </div>
+        <!-- SMART -->
+         <div class =locations>
+            <img src="images/smart.jpg" alt="SMART Art">
+            <h3><a href="https://smartsartschool.org/">
+            🎭 SMARTS (Students Motivated by the Arts).</a></h3>
+            <p>Inspire creativity through free art, music, dance, and theater programs for youth.</p>
+        </div>
 
-              <div class="location">
-                <h3>🧪 OH WOW! Center</h3>
-                <p>Hands-on STEM fun for kids!</p>
-              </div>
+        <!-- Steel mesuem -->
+         <div class =locations>
+            <img src="images/steel.jpg" alt="Steel Museum">
+            <h3><a href="https://yhcil.org/">
+            🏭 Steel Museum, Youngstown Historical Center of Industry and Labor.</a></h3>
+            <p>Discover Youngstown’s industrial heritage and the legacy of steel manufacturing.</p>
+        </div>
 
-               <div class ="location">
-                  <h3>🏛️Mahoning Valley Historical Society</h3>
-                  <p>Explore American art collections</p>
-               </div>
-             </div>
-            </div>
-        </section>
-        <!-- Bottom description -->
-        <section>
-            <div class="bottom-description">
-                <div class = "b-design">
-                    <h2>Track Your Progress</h2>
-                    <p>Watch your passport fill up with stamps as 
-                    you complete each challenge!</p>
-                </div>
-            </div>
-        </section>
+        <!-- Planetarium -->
+         <div class =locations>
+            <img src="images/planetarium.jpg" alt="Butler Art Museum">
+            <h3><a href ="https://www.wbplanetarium.org/">✨ Ward Beecher Planetarium.</a></h3>
+            <p>Explore the cosmos with immersive star shows and astronomy exhibits.</p>
+        </div>
+
+        <!-- Wean park -->
+        <div class =locations>
+            <img src="images/wean_park.png" alt="Wean Park">
+            <h3><a href="https://youngstownlive.com/attraction/wean-park/">🌳 Wean Park</a></h3>
+            <p>Relax and enjoy scenic walking trails, playgrounds, and beautiful green spaces.</p>
+        </div>
+    </section>
+
+<!-- Bottom description -->
+        <section class="track-progress">
+        <h1 class="track-heading">Track Your Progress</h1>
+        <P class="track-details">Watch your passport to fill up with stamps as you complete each challenges!</P>
+
+        <div class="passport-grid">
+            <div class="stamp-slot completed">🏛️</div>
+            <div class="stamp-slot completed">🗻</div>
+            <div class="stamp-slot">⛵</div>
+            <div class="stamp-slot">🎠</div>
+            <div class="stamp-slot">🌴</div>
+            <div class="stamp-slot">🗽</div>
+        </div>
+    </section>
 
     </main
    
