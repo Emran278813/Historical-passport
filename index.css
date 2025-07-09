@@ -361,6 +361,7 @@ h3:hover{
     border: 3px dotted #aaa ;
     border-radius: 40px;
     box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    animation: float 4s ease-in-out infinite;
 }
 
 .stamp-slot{
@@ -397,13 +398,25 @@ h3:hover{
 }
 
 .footer-rights{
-    font-size:20px;
+    font-size:25px;
     padding:10px;
 }
 li{
     display: inline-block;
     padding: 20px;
+    font-size:20px;
+    color:#ffa500;
 }
+
+li a{
+    text-decoration: none;
+    color:#ffa500;
+}
+.footer-credit{
+    font-size:25px;
+}
+
+
 
 /* ✅ Responsive Styles for Smaller Screens */
 @media (max-width: 768px) {
