@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Georgia,sans-serif;
+}
+
+body{
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    height: fit-content;
+}
+
+/* Navbar design */
+.navbar{
+    background:#111111;
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+    height:90px;
+    justify-content:space-between;
+    align-content: center;
+    border-radius: 0 0 10% 10%;
+}
+.navbar-logo{
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    background:hsl(0, 100%, 50%);
+    border-radius:20px;
+    padding: 10px;
+    border:none;
+    font-style:italic;
+    margin:-17px;
+}
+.navbar-items{
+    float:right;
+    font-size: 20px;
+}
+.navbar-item{
+    display:inline-block;
+    padding: 20px;
+}
+.navbar-item a{
+    text-decoration: none;
+    color:white;
+}
+.special{
+    position:relative;
+}
+.navbar-badge{
+    background-color:red;
+    padding:10px;
+    border-radius:30px;
+    position:absolute;
+    top:-18px;
+    right:-22px;
+    text-align:center;
+}
+
+
+/* Partner site design starts here */
+.partner-heading{
+    text-align:center;
+    padding: 100px;
+    background-color: aqua;
+    box-shadow: 10px 13px 15px rgba(0,0,0,0.2);
+}
+.header-heading{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.partner-grid{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.partner-card{
+    background-color: #ffffff;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 8px 12px 15px rgba(0,0,0,0.1);
+    width: 380px;
+    height:420px;
+}
+
+.image-design{
+    width:250px;
+    height:250px;
+    object-fit: cover;
+    border-radius:15px;
+    justify-content: center;
+    padding: 20px;
+    border:none;
+    border-radius: 30px;
+}
+
+.content{
+    padding: 10px;
+}
+
+.content p{
+    padding: 10px;
+}
+
+/* Footer design start here */
+.footer-design{
+    background-color:#007b5e;
+    padding:10px;
+    color:white;
+    text-align:center;
+}
+
+.footer-rights{
+    font-size:25px;
+    padding:10px;
+}
+li{
+    display: inline-block;
+    padding: 20px;
+    font-size:20px;
+    color:#ffa500;
+}
+
+li a{
+    text-decoration: none;
+    color:#ffa500;
+}
+.footer-credit{
+    font-size:25px;
+}
+
+.university a{
+    text-decoration:  none;
+    color:white;
+}

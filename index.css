@@ -94,6 +94,11 @@ body{
     box-shadow: none;
     font-size: 20px;
     border:none;
+    transition: transform 0.5s ease ;
+}
+
+.start-button:hover{
+    transform: scale(1.01);
 }
 
 /*Introduction part*/
@@ -415,6 +420,12 @@ li a{
 .footer-credit{
     font-size:25px;
 }
+
+.university a{
+    text-decoration:  none;
+    color:white;
+}
+
 
 
 
