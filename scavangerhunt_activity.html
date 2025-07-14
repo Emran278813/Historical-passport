@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="scavangerhunt_activity.css" />
+  <title>Scavenger Hunt</title>
+</head>
+<body>
+
+  <!-- Wrapper to push footer down -->
+  <div class="page-wrapper">
+    
+    <!-- Navbar design -->
+    <nav class="navbar">
+      <div class="navbar-logo">Explore Y-Town</div>
+      <div class="navbar-items">
+      <div class="navbar-item Home"><a href="index.html">Home</a></div>
+      <div class="navbar-item">
+        <div class="navbar-item">
+          <label>Language</label>
+          <select>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+          </select>
+        </div>
+        <div class="navbar-item Contact">
+          <a href="historical_contact.html">Contact info</a>
+        </div>
+        <div class="navbar-item about">
+          <a href="partner.html">Community Champions</a>
+        </div>
+        <div class="navbar-item special"> Special Event <span class="navbar-badge"><a href="upcoming_event.html">New!</a></span></div>
+      </div>
+    </nav>
+<!-- Scavanger hunt start here  -->
+  <section class="hunt-form-section">
+      <div class="hunt-form-container">
+        <h2>🏙️ Discover Downtown: A Youngstown History Hunt</h2>
+        <p class="hunt-description">
+          Explore downtown Youngstown with a fun, family-friendly scavenger hunt! Solve clues, visit historic spots, and learn cool facts about the city’s past.
+          It’s an adventure for all ages — perfect for a weekend outing or summer fun!
+        </p>
+
+        <h3>📍 Chasing History at Steel Museum</h3>
+
+          <form class="hunt-form" action="#" method="post" enctype="multipart/form-data">
+            <label for="name">👤 Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">📱 Email or Phone:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="visit-date">📅 Date of Visit:</label>
+            <input type="date" id="visit-date" name="visit-date" required>
+
+            <label for="beam-photo">📸 Find the large steel beam display. Upload a picture:</label>
+            <input type="file" id="beam-photo" name="beam-photo" accept="image/*">
+
+            <label for="founding-year">❓ What year was the Youngstown Sheet & Tube Company founded?</label>
+            <input type="text" id="founding-year" name="founding-year" placeholder="Enter the year">
+
+            <label for="machine-photo">📸 Take a photo of the oldest machine in the museum:</label>
+            <input type="file" id="machine-photo" name="machine-photo" accept="image/*">
+
+            <label for="safety-answer">🛡️ What safety equipment did steelworkers use in the 1950s?</label>
+            <textarea id="safety-answer" name="safety-answer" rows="3" placeholder="Hint: Check the protective gear exhibit."></textarea>
+
+            <label for="question-type">📌 What safety equipment did steelworkers use in the 1950s? (Hint: Check the protective gear exhibit.)</label>
+            <textarea id="safety-answer" name="safety-answer" rows="3" placeholder="Hint: Check the costume exhibit."></textarea>
+            <button type="submit" class="submit-btn">✅ Submit Your Hunt</button>
+          </form>
+      </div>
+  </section>
+
+
+
+  <!-- Footer Section -->
+  <footer class="footer-design">
+    <p class="footer-rights">© 2025 Explore Downtown Youngstown</p>
+    <ul class="design-bullets">
+      <li>Privacy Policy</li>
+      <li>Terms of Service</li>
+      <li><a href="historical_contact.html">Contact Information</a></li>
+    </ul>
+    <p class="footer-credit">
+      Developed as part of an internship at
+      <strong class="university">
+        <a href="https://eagworks.org/">Economic Action Group (EAG)</a>
+      </strong><br>
+      in collaboration with
+      <strong class="university">
+        <a href="https://ysu.edu/">Youngstown State University.</a>
+      </strong>
+    </p>
+  </footer>
+
+</body>
+</html>

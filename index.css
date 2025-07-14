@@ -58,6 +58,7 @@ body{
     text-align:center;
 }
 
+
 /* Web-heading start here  */
 .web-heading{
     background-image: url('images/downtown.jpg');
@@ -82,28 +83,87 @@ body{
     padding: 20px;
 }
 
-.button-design{
-    font-size:40px;
-    padding:100px;
-}
-.start-button{
-    background-color:green;
-    color:white;
-    padding:10px;
-    border-radius: 10px;
-    box-shadow: none;
-    font-size: 20px;
-    border:none;
-    transition: transform 0.5s ease ;
+/* Button design */
+
+.button-design {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin:10px;
 }
 
-.start-button:hover{
-    transform: scale(1.01);
+.start-button {
+    display: inline-block;      /* Make anchor behave like a button */
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    text-decoration: none;      /* Remove underline */
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.start-button:hover {
+    transform: scale(1.05);
+}
+
+/* meet local hero */
+.main-hero-design{
+    display:flex;
+    justify-content: left;
+}
+
+.meet-our-hero-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.meet-our-hero-circle h2 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 6px solid #cc5500;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: #cc5500;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-weight: bold;
+  user-select: none;
+  box-shadow: 0 0 10px rgba(204, 85, 0, 0.4);
+  animation: bounce 2s ease-in-out infinite;
+  background-color: #fffaf3;
+}
+
+.meet-our-hero-circle h2 a{
+    text-decoration: none;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 
 /*Introduction part*/
 .main-descriptions{
-   padding:100px;
+   padding:50px;
    text-align:center;
    color:#007b5e;
    margin:1px;

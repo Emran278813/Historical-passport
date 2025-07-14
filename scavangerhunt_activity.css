@@ -77,70 +77,79 @@ main {
     text-align:center;
 }
 
-.scavenger-hunt-section {
+/* Activity page  */
+.hunt-form-section {
   background-color: #f9f9f9;
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
-  text-align: center;
-  border-radius: 8px;
   max-width: 800px;
-  height: auto;
   margin: 40px auto;
-  box-shadow: 8px 14px 18px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.scavenger-hunt-section h2 {
-  font-size: 2.4rem;
-  margin-bottom: 15px;
+.hunt-form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
   color: #2a7f62;
+  text-align: center;
 }
 
-.scavenger-hunt-section p {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
+.hunt-form-container h3 {
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+  color: #005b7a;
+  text-align: center;
 }
 
-.hunt-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 30px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
-.hunt-list li {
-  background: #e3f0ea;
-  border-left: 6px solid #2a7f62;
-  padding: 20px 20px;
-  margin-bottom: 12px;
+.hunt-description {
   font-size: 1.1rem;
-  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-.hunt-list li strong {
-  color: #1f5c43;
+.hunt-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.btn-primary {
-  display: inline-block;
-  background-color: #2a7f62;
-  color: #fff;
-  font-weight: 600;
-  padding: 14px 30px;
-  font-size: 1.2rem;
+.hunt-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hunt-form input,
+.hunt-form textarea,
+.hunt-form select {
+  padding: 10px;
+  font-size: 1rem;
   border-radius: 6px;
-  text-decoration: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 100%;
+}
+
+.hunt-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #2a7f62;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
+.submit-btn:hover {
   background-color: #24614e;
 }
 
