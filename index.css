@@ -260,6 +260,10 @@ hr{
     font-size:25px;
     font-style: italic;
 }
+.destination-design p a{
+    text-decoration: none;
+    color: black;
+}
 .destination-images{
     width:auto;
     height:300px;

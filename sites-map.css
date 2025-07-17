@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Georgia,sans-serif;
+}
+
+body{
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    height: fit-content;
+}
+
+/* Navbar design */
+.navbar{
+    background:#111111;
+    color:white;
+    padding:20px;
+    position:sticky;
+    top:0;
+    height:90px;
+    justify-content:space-between;
+    align-content: center;
+    border-radius: 0 0 10% 10%;
+}
+.navbar-logo{
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    background:hsl(0, 100%, 50%);
+    border-radius:20px;
+    padding: 10px;
+    border:none;
+    font-style:italic;
+    margin:-17px;
+}
+.navbar-items{
+    float:right;
+    font-size: 20px;
+}
+.navbar-item{
+    display:inline-block;
+    padding: 20px;
+}
+.navbar-item a{
+    text-decoration: none;
+    color:white;
+}
+.special{
+    position:relative;
+}
+.navbar-badge{
+    background-color:red;
+    padding:10px;
+    border-radius:30px;
+    position:absolute;
+    top:-18px;
+    right:-22px;
+    text-align:center;
+}
+
+/* --- Map Section Styles --- */
+/* Centered main content - enhanced fancy design */
+.centered-main {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+  margin: 40px auto;
+  padding: 50px 70px;
+  border-radius: 20px;
+  box-shadow: 
+    0 8px 30px rgba(26, 115, 232, 0.15),
+    inset 0 0 15px rgba(255, 255, 255, 0.8);
+  max-width: 420px;
+  text-align: center;
+  transition: box-shadow 0.4s ease;
+}
+
+.centered-main:hover {
+  box-shadow: 
+    0 12px 40px rgba(26, 115, 232, 0.3),
+    inset 0 0 25px rgba(255, 255, 255, 0.9);
+}
+
+.centered-main h1 {
+  margin-bottom: 35px;
+  font-weight: 900;
+  font-size: 2.75rem;
+  color: #174ea6;
+  text-shadow: 1px 1px 3px rgba(26, 115, 232, 0.4);
+  letter-spacing: 1.2px;
+}
+
+/* body design  */
+.intro-text {
+  font-size: 1.1rem;
+  color: #3a4a69;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  max-width: 320px;
+  font-weight: 500;
+}
+
+
+/* Big fancy button - upgraded */
+.map-button {
+  display: inline-block;
+  padding: 18px 42px;
+  font-size: 1.35rem;
+  font-weight: 900;
+  color: white;
+  background: linear-gradient(45deg, #1a73e8, #4a90e2);
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 
+    0 6px 20px rgba(26, 115, 232, 0.6),
+    0 0 10px rgba(74, 144, 226, 0.8);
+  transition: 
+    background 0.4s ease,
+    box-shadow 0.4s ease,
+    transform 0.2s ease;
+  user-select: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.map-button:hover,
+.map-button:focus {
+  background: linear-gradient(45deg, #0c52b3, #3a78cc);
+  box-shadow: 
+    0 10px 30px rgba(12, 82, 179, 0.9),
+    0 0 18px rgba(58, 120, 204, 1);
+  transform: scale(1.05);
+  outline: none;
+}
+
+.map-button:active {
+  transform: scale(0.95);
+  box-shadow: 
+    0 6px 15px rgba(12, 82, 179, 0.8),
+    0 0 10px rgba(58, 120, 204, 0.7);
+}
+
+
+/* Footer design start here */
+.footer-design{
+    background-color:#007b5e;
+    padding:10px;
+    color:white;
+    text-align:center;
+}
+
+.footer-rights{
+    font-size:25px;
+    padding:10px;
+}
+li{
+    display: inline-block;
+    padding: 20px;
+    font-size:20px;
+    color:#ffa500;
+}
+
+li a{
+    text-decoration: none;
+    color:#ffa500;
+}
+.footer-credit{
+    font-size:25px;
+}
+
+.university a{
+    text-decoration:  none;
+    color:white;
+}
