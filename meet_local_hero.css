@@ -109,6 +109,7 @@ main {
   border: 2px solid #ffa500;
   border-radius: 12px;
   padding: 20px;
+  margin:10px;
   gap: 20px;
   align-items: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
