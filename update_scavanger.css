@@ -1,71 +1,98 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: Georgia,sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, sans-serif;
 }
 
-body{
-    background-color: #f9f9f9;
-    font-size: 1rem;
-    height: fit-content;
+/* Make body and html full height */
+html, body {
+  height: 100%;
 }
 
-/* Navbar design */
-.navbar{
-    background:#111111;
-    color:white;
-    padding:20px;
-    position:sticky;
-    top:0;
-    height:90px;
-    justify-content:space-between;
-    align-content: center;
-    border-radius: 0 0 10% 10%;
-}
-.navbar-logo{
-    font-size:20px;
-    font-weight:bold;
-    float:left;
-    background:hsl(0, 100%, 50%);
-    border-radius:20px;
-    padding: 10px;
-    border:none;
-    font-style:italic;
-    margin:-17px;
-}
-.navbar-items{
-    float:right;
-    font-size: 20px;
-}
-.navbar-item{
-    display:inline-block;
-    padding: 20px;
-}
-.navbar-item a{
-    text-decoration: none;
-    color:white;
-}
-.special{
-    position:relative;
-}
-.navbar-badge{
-    background-color:red;
-    padding:10px;
-    border-radius:30px;
-    position:absolute;
-    top:-18px;
-    right:-22px;
-    text-align:center;
+/* Flex layout on body to push footer down */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  font-size: 1rem;
 }
 
-/* design from here */
+/* Wrapper for navbar + main content to fill remaining space */
+.page-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
+/* Navbar styles */
+.navbar {
+  background: #111111;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 10% 10%;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  background: red;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-style: italic;
+  color: white;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar-item {
+  font-size: 18px;
+}
+
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-item select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.special {
+  position: relative;
+}
+
+.navbar-badge {
+  background-color: red;
+  padding: 6px 10px;
+  border-radius: 30px;
+  position: absolute;
+  top: -10px;
+  right: -18px;
+  font-size: 12px;
+  color: white;
+}
+
+/* Main form container */
 .newsletter-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px;
+  flex: 1;
 }
 
 .card {
@@ -73,7 +100,7 @@ body{
   border-radius: 20px;
   backdrop-filter: blur(10px);
   padding: 40px;
-  max-width: 400px;
+  max-width: 450px;
   width: 100%;
   text-align: center;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -96,7 +123,7 @@ body{
   margin: 10px 0;
   border: none;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
 }
 
@@ -122,7 +149,7 @@ body{
 }
 
 .privacy {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #666;
   margin-top: 15px;
 }
@@ -135,36 +162,42 @@ body{
   font-size: 0.9rem;
 }
 
-
-
-/* Footer design start here */
-.footer-design{
-    background-color:#007b5e;
-    padding:10px;
-    color:white;
-    text-align:center;
+/* Footer styles */
+.footer-design {
+  background-color: #007b5e;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 
-.footer-rights{
-    font-size:25px;
-    padding:10px;
-}
-li{
-    display: inline-block;
-    padding: 20px;
-    font-size:20px;
-    color:#ffa500;
+.footer-rights {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-li a{
-    text-decoration: none;
-    color:#ffa500;
-}
-.footer-credit{
-    font-size:25px;
+.design-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
 }
 
-.university a{
-    text-decoration:  none;
-    color:white;
+.design-bullets li {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.design-bullets a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.footer-credit {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.university a {
+  text-decoration: none;
+  color: white;
 }
